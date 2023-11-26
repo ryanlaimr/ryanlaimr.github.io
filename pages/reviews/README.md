@@ -13,3 +13,7 @@ Course Taken:
 [ma2002]: https://ryanlaimr.github.io/pages/reviews/ma2002
 [st1131]: https://ryanlaimr.github.io/pages/reviews/st1131
 [cs1010s]: https://ryanlaimr.github.io/pages/reviews/cs1010s
+
+[back][back]
+
+[back]: https://ryanlaimr.github.io
