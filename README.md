@@ -9,3 +9,7 @@ Hello, I am [Ryan][biophoto], a year 1 undergraduate majoring in statistics at t
 [nusemail]: mailto:zheyuan_lai@u.nus.edu
 [personal_email]: mailto:ryanlai.zheyuan@gmail.com
 [biophoto]: https://ryanlaimr.github.io/assets/bio-photo.jpg
+
+[Course Reviews][reviews]
+
+[reviews]: https://ryanlaimr.github.io/pages/reviews
