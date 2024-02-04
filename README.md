@@ -10,6 +10,6 @@ Hello, I am Ryan, a year 1 undergraduate majoring in statistics and mathematics 
 [personal_email]: mailto:ryanlai.zheyuan@gmail.com
 [biophoto]: https://ryanlaimr.github.io/assets/bio-photo.jpg
 
-[Course Reviews][reviews] [Notes](https://github.com/ryanlaimr/notesbyryan)
+[Course Reviews][reviews] | [Notes](https://github.com/ryanlaimr/notesbyryan)
 
 [reviews]: https://ryanlaimr.github.io/pages/reviews
