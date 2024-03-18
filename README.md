@@ -1,8 +1,8 @@
-# Zheyuan _Ryan_ Lai
+# Zheyuan Lai
 
-Hello, I am Ryan, a year 1 undergraduate majoring in statistics and mathematics at the National University of Singapore (NUS).
+Hello, I am Zheyuan, a year 1 undergraduate majoring in statistics and mathematics at the National University of Singapore (NUS).
 
-[CV][resume] | [LinkedIn][linkedin] | [Email][personal_email]
+[CV][resume] | [LinkedIn][linkedin] | [Email][nusemail]
 
 [resume]: https://ryanlaimr.github.io/files/resume.pdf
 [linkedin]: https://linkedin.com/in/zheyuanlai
