@@ -1,6 +1,6 @@
 # About Me
 
-Hello, I am Zheyuan (Ryan), a first-year undergraduate student at the [National University of Singapore (NUS)](https://nus.edu.sg). I am currently pursuing a degree of Bachelor of Science in Statistics with a second major in Mathematics and a minor in Computer Science. I am deeply interested in different Statistics-related topics including Operations Research, Optimization, and Reinforcement Learning. You can view my [CV][resume] or email me at zheyuan@outlook.sg or zheyuan_lai@u.nus.edu.
+Hello, I am Zheyuan (Ryan), a first-year undergraduate student at the [National University of Singapore (NUS)](https://nus.edu.sg). I am currently pursuing a degree of Bachelor of Science in Statistics with a second major in Mathematics and a minor in Computer Science. I am deeply interested in different Statistics-related topics including Operations Research, Optimization, and Reinforcement Learning. You can view my [CV][resume] or drop me an email at zheyuan@outlook.sg or zheyuan_lai@u.nus.edu.
 
 # Social Media
 
