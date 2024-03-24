@@ -9,4 +9,4 @@
 * **LaTeX**: A Practical Guide to Graph Plotting
   * [Code](https://ryanlaimr.github.io/pages/notes/learn_latex/graph_plotting.tex) | [Document](https://ryanlaimr.github.io/pages/notes/learn_latex/graph_plotting.pdf)
   * Try to run it out on [Overleaf](https://overleaf.com) to learn about the features.
-* My notes on [**Probability Theory for Reinforcement Learning**](https://ryanlaimr.github.io/pages/notes/probability_rl): Covering the foundation of Probability Theory for RL Theory, including important inequalities and basic bounds. 
+* My notes on [**Probability Theory for Reinforcement Learning**](https://ryanlaimr.github.io/pages/notes/probability_rl.html): Covering the foundation of Probability Theory for RL Theory, including important inequalities and basic bounds. 
