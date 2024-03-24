@@ -1,0 +1,219 @@
+\documentclass[12pt]{article}
+\usepackage[utf8]{inputenc}
+\usepackage{geometry}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{graphicx}
+\graphicspath{{./images}}
+\usepackage{array}
+\geometry{left=20mm, right=20mm, top=20mm, bottom=20mm}
+\title{LaTeX Workshop (Basic)}
+\author{Ryan Lai}
+\date{February 2024}
+\begin{document}
+\maketitle
+\tableofcontents
+\section{Exercise 1: Mathematical Environment}
+\subsection{Question 1}
+If $f$ is a continuous, odd function on $[-1, 1]$, then $\int_{-1}^1f(x)dx=0$
+\subsection{Question 2}
+The sine rule states that given a triangle $ABC$ with side lengths $a$, $b$ and $c$, $\frac{\sin A}{a}=\frac{\sin B}{b}=\frac{\sin C}{c}$
+\subsection{Question 3}
+Let $A$ be a finite set of size $m$ where $m\geq{1}$ and let $a\in{A}$. Then $|A \backslash \{ a \}|+1=m$.
+\section{Exercise 2: DisplayMath Environment}
+\subsection{Question 1}
+Give an angle $\theta \in [0, 2\pi]$, we have that $$\cos 3\theta =4\cos^3 \theta-3\cos \theta$$
+\subsection{Question 2}
+Here is an example of a differential equation in terms of $x$ and $y$, $$x^2y\frac{dy}{dx}+xy=0\text{, } y=1 \text{ when } x=0.$$
+\subsection{Question 3}
+Give a function $f(x)$ whose domain $I \subset\mathbb{R} $ contains points arbitrarily close to $a$. We say that $$\lim_{x\to a}f(x)=L$$ if $\forall \epsilon >0, \exists \delta >0$ such that \[0<|x-a|<L\implies |f(x)-L|<\epsilon\]
+\section{Exercise 3: Align Environment and Delimiters}
+\subsection{Question 1}
+Let $\textbf{a}$, $\textbf{b}$ and $\textbf{c}$ be vectors with the same initial point and whose terminal endpoints do not lie along a line, then:
+\begin{align*}
+    (\textbf{a}-\textbf{b})\times(\textbf{a}-\textbf{c})&=\textbf{a}\times(\textbf{a}-\textbf{c})+(-\textbf{b})\times(\textbf{a}-\textbf{c})\\
+    &=\textbf{a}\times\textbf{a}+\textbf{a}\times(-\textbf{c})+(-\textbf{b})\times\textbf{a}+(-\textbf{b})\times(-\textbf{c})\\
+    &=-(\textbf{a}\times\textbf{c})-(\textbf{b}\times\textbf{a})+(\textbf{b}\times\textbf{c})\\
+    &=(\textbf{a}\times\textbf{b})+(\textbf{b}\times\textbf{c})+(\textbf{c}\times\textbf{a})
+\end{align*}
+\subsection{Question 2}
+Using L'H Rule, the limit may be evaluated as follows:
+\begin{align*}
+    \lim_{x\to 0}(\frac{1}{\sin x}-\frac{1}{x})&=\lim_{x\to 0}\frac{x-\sin x}{x\sin x}\\
+    &=\lim_{x\to 0}\frac{1-\cos x}{\sin x+x\cos x}\\
+    &=\lim_{x\to 0}\frac{\sin x}{2\cos x-x\sin x}\\
+    &=\frac{\sin 0}{2\cos 0-0\sin 0}\\
+    &=0
+\end{align*}
+\subsection{Question 3}
+The triangle inequality for the euclidean norm of $\mathbb{R}^n$ shows that $$||\sum_{i=1}^ma_i||\leq \sum_{i=1}^m||a_i||$$
+Use this to prove that $$\Bigg(\int_X\Bigg|\int_Y f(x,y)dy\Bigg|^2dx\Bigg)^{\frac{1}{2}}\leq \int_Y\Bigg( \int_X|f(x,y)|^2dx\Bigg)^\frac{1}{2}dy$$
+\section{Exercise 4: Array Environment}
+\subsection{Question 1}
+\begin{align*}
+    \left(
+    \begin{array}{ccc|c}
+        1 & 2 & 1 & a \\
+        0 & -3 & 2 & -2a\\
+        0 & 0 & 6-2a & 3b+2a
+    \end{array}
+    \right)
+\end{align*}
+\subsection{Question 2}
+\begin{align*}
+    f(x):=
+    \left\{
+    \begin{array}{ll}
+        1 & \text{if } x\in {0,1};\\
+        \frac{1}{q} & \text{if } x\in\mathbb{Q} \text{ and } x=\frac{p}{q} \text{ with } p,q\in\mathbb{Z}_{>0} \text{ relatively prime;}\\
+        0 & \text{if } x\notin\mathbb{Q}
+    \end{array}
+    \right.
+\end{align*}
+\subsection{Question 3}
+\begin{align*}
+    \left\{
+    \begin{array}{l}
+        a+2b+c=0\\
+        b+c=1\\
+        a+c=1\\
+        a+b+c=1
+    \end{array}
+    \right.
+    \implies
+    \left(
+    \begin{array}{ccc|c}
+        1 & 2 & 1 & 0\\
+        0 & 1 & 1 & 1\\
+        1 & 0 & 1 & 1\\
+        1 & 1 & 1 & 1
+    \end{array}
+    \right)
+    \implies
+    \textbf{Ax=b}
+\end{align*}
+\section{Post Workshop Exercise: Mathematical Notations and Environment}
+\subsection{Question 1}
+Let $f(x,y)$ be a differentiable, two-variable function and let $(a,b)$ be a point in $\mathbb{R}^2$. If the gradient of the function at $(a,b)$, $\nabla f(a,b)$ is not equal to $0$, then $\nabla f(a,b)$ is orthogonal to the level curve of $f$ that contains $(a,b)$.
+\subsection{Question 2}
+Let $X$ be compact, Hausdroff topological space that has more than one point. Show that there is a non-constant, continuous function $f:X\to \mathbb{R}^+$.
+\subsection{Question 3}
+A real value function $f$ is continuous at $x$ if: $$\forall \epsilon >0, \exists\delta >0, \text{ such that }\forall y\in \mathbb{R}, |x-y|<\delta\implies|f(x)-f(y)|<\epsilon.$$
+\subsection{Question 4}
+The \textbf{set difference} between two sets $S$ and $T$ is written as $S\backslash T$, and means the set that consists of the elements of $S$ which are not the elements of $T$, that is: $$x\in S\backslash T\implies x\in S\wedge x\notin T.$$
+\subsection{Question 5}
+The \textbf{Cauchy-Schwartz Inequality} states that \[(a_1b_1+a_2b_2+...+a_nb_n)\leq (a_1^2+a_2^2+...+a_n^2)(b_1^2+b_2^2+...+b_n^2)\] for any real numbers $a_1, a_2, ..., a_n, b_1, b_2, ..., b_n$. Use this to prove the inequality: $$(a_1+...+a_n)^2\leq n(a_1^2+...+a_n^2).$$
+\subsection{Question 6}
+Given that $1+z+z^2+...+z^n=\frac{1-z^{n+1}}{1-z}$ where $z\neq 1$, prove the Lagrange's trigonometric identity: \[\sum_{n=1}^N\cos(n\theta)=-\frac{1}{2}+\frac{\sin((N+\frac{1}{2})\theta)}{2\sin(\frac{\theta}{2})}\]
+\subsection{Question 7}
+The P.D.F. of normal distribution is given by $$\phi(x)=\frac{1}{\sigma\sqrt{2\pi}}e^{-\frac{(x-\mu)^2}{2\sigma^2}}$$ and the C.D.F. of normal distribution is given by $$\Phi(x)=\frac{1}{\sqrt{2\pi}}\int_{-\infty}^xe^{-\frac{\mu^2}{2}}du.$$
+\subsection{Question 8}
+Let $r\in\mathbb{R}_{>0}$ with $r\neq 1$. Let $\theta\in(0,\pi)$. Determine the value of the integral $$\frac{1}{2\pi i}\int_{C(0,r)}\frac{1-\zeta^2}{1-2\zeta\cos\theta+\zeta^2}d\zeta$$in terms of $r$ and $\theta$.
+\subsection{Question 9}
+The real number ln$2$ can be expressed as the following infinite sum, $$\text{ln}2=\sum_{n=0}^\infty\frac{1}{(2n+1)(2n+2)}=\frac{1}{1\times2}+\frac{1}{3\times4}+\frac{1}{5\times6}+\dots.$$
+\subsection{Question 10}
+This is an example of a very complicated triple integral, $$\int_0^2 \int_{-\sqrt{2x-x^2}}^{\sqrt{2x-x^2}}\int_{\sqrt{x^2+y^2-2x+1}}^{\sqrt{2-y^2-x^2+2x}}z^2zdzdydx.$$
+\section{Post Workshop Exercise: Alignment and Delimiters}
+\subsection{Question 1}
+Let $m,n\in\mathbb{N}$ such that $A$ is an $m\times n$ matrix and $B$ is an $n\times m$ matrix. Then,
+\begin{align*}
+    \text{Tr}(AB)&=\sum_{i=1}^n(AB)_{i,i}\\
+    &= \sum_{i=1}^n\sum_{k=1}^na_{i,k}b_{k,i}\\
+    &= \sum_{k=1}^n\sum_{i=1}^nb_{k,i}a_{i,k}\\
+    &= \sum_{k=1}^n(BA)_{k,k}\\
+    &= \text{Tr}(BA)
+\end{align*}
+\subsection{Question 2}
+\begin{align*}
+    &\lambda \text{ is an eigenvalue of } A\\
+    &\Leftrightarrow Au=\lambda u\text{ for some nonzero column vector } u \text{ in } \mathbb{R}^n\\
+    &\Leftrightarrow \lambda u-Au=0 \text{ for some nonzero column vector } u \text{ in } \mathbb{R}^n\\
+    &\Leftrightarrow (\lambda I-A)u=0\text{ for some nonzero column vector } u\text{ in }\mathbb{R}^n\\
+    &\Leftrightarrow \text{ the linear system }(\lambda I-A)x=0\text{ has non-trivial solutions}\\
+    &\Leftrightarrow \text{det}(\lambda I-A)=0.
+\end{align*}
+\subsection{Question 3}
+Let $\Omega\in\mathbb{R}$ and let $f$ and $g$ be two real-valued measurable functions on $\mathbb{R}$. Show that $$\int_\Omega |f(x)g(x)|dx\leq\Bigg(\int_\Omega |f(x)|^pdx\Bigg)^{1/p}\Bigg(\int_\Omega |g(x)|^qdx\Bigg)^{1/q}$$ for any $p,q\in [1,\infty]$ with $\frac{1}{p}+\frac{1}{q}=1$.
+\subsection{Question 4}
+Using \textbf{De Moivre's Formula}: $$\sin x=\dfrac{(\cos\frac{x}{n}+i\sin\frac{x}{n})^n-(\cos\frac{x}{n}-i\sin\frac{x}{n})^n}{2i},$$ we verify that \begin{align*}
+    \sin x&=x\prod_{n-1}^\infty\bigg(1-\frac{x^2}{n^2\pi^2}\bigg)\\
+    &=x\bigg(1-\frac{x^2}{\pi^2}\bigg)\bigg(1-\frac{x^2}{4\pi^2}\bigg)\dots
+\end{align*}
+\subsection{Question 5}
+\begin{align*}
+    \int\frac{dx}{x^2-a^2} &= -\frac{1}{a}\text{arccoth}\frac{x}{a}+C\\
+    &= -\frac{1}{a}\bigg(\frac{1}{2}\ln\bigg(\frac{x+a}{x-a}\bigg)\bigg)+C\\
+    &= -\frac{1}{2a}\ln\bigg(\frac{x+a}{x-a}\bigg)+C\text{by simplifying}\\
+    &= \frac{1}{2a}\ln\bigg(\frac{x-a}{x+a}\bigg)+C
+\end{align*}
+\subsection{Question 6}
+Let $f(x)=\frac{1}{x}$. For every $a\in\mathbb{R}\backslash \{0\}$,
+\begin{align*}
+    f'(a) &= \lim_{x\to a}\frac{f(x)-f(a)}{x-a}\\
+    &= \lim_{x\to a}\dfrac{\frac{1}{x}-\frac{1}{a}}{x-a}\\
+    &= \lim_{x\to a}\dfrac{\frac{a-x}{ax}}{x-a}\\
+    &= \lim_{x\to a}\frac{-1}{ax}\\
+    &= -\frac{1}{a^2}.
+\end{align*}
+\subsection{Question 7}
+By the \textbf{Products of Sins of Pi}, we have: $$\prod_{k=1}^{n-1}\sin\bigg(\frac{k\pi}{n}\bigg)=\frac{n}{2^{n-1}}$$ Therefore, we have \begin{align*}
+    \ln\Bigg(\prod_{k=1}^{n-1}\sin\bigg(\frac{k\pi}{n}\bigg)\Bigg) 
+    &= \sum_{k=1}^{n-1}\ln\Bigg(\sin\bigg(\frac{k\pi}{n}\bigg)\Bigg)\\
+    &= \ln\bigg(\frac{n}{2^{n-1}}\bigg)\\
+    &= \ln n-(n-1)\ln 2
+\end{align*}
+\section{Post Workshop Exercise: Array Environment}
+\subsection{Question 1}
+Given a natural number $n$,\begin{align*}
+    \sum_{j=0}^m
+    \left(
+    \begin{array}{c}
+        n\\
+        k
+    \end{array}
+    \right)
+    =\left(
+    \begin{array}{c}
+        n+m+1\\
+        n+1
+    \end{array}
+    \right)
+    =\left(
+    \begin{array}{c}
+        n+m+1\\
+        m
+    \end{array}
+    \right)
+\end{align*}
+\subsection{Question 2}
+Let $B_n$ the Bell number for $n\in\mathbb{Z}_{\leq0}$. Then, $$B_{n+1}=\sum_{k=0}^n\left(\begin{array}{c}n\\k\end{array}\right)B_k$$ where $\left(\begin{array}{c}n\\k\end{array}\right)$ are binomial coefficients.
+\subsection{Question 3}
+Let $$T(u,v,w)=(x(u,v,w),y(u,v,w),z(u,v,w))$$ be a space transformation. Then, the \textit{Jacobian} of $T$ is the following $3\times3$ determinant:$$\frac{\partial(x,y,z)}{\partial(u,v,w)}=\left|\begin{array}{ccc}
+    \frac{\partial x}{\partial u} & \frac{\partial x}{\partial v} & \frac{\partial x}{\partial w}\\
+    \frac{\partial y}{\partial u} & \frac{\partial y}{\partial v} & \frac{\partial y}{\partial w}\\
+    \frac{\partial z}{\partial u} & \frac{\partial z}{\partial v} & \frac{\partial z}{\partial w}
+\end{array}\right|.$$
+\subsection{Question 4}
+Let function $f:\mathbb{R}\rightarrow\mathbb{R}$ be a function such that each of its first-order partial derivatives exist on $\mathbb{R}^n$. Then the Jacobian matrix of $f$ is defined to be \[\mathbf{J}=\begin{bmatrix}
+    \frac{\partial f}{\partial x_1} & \cdots & \frac{\partial f}{\partial x_n}
+\end{bmatrix}=\begin{bmatrix}
+    \nabla^Tf_1\\
+    \vdots\\
+    \nabla^Tf_n
+\end{bmatrix}=\begin{bmatrix}
+    \frac{\partial f_1}{\partial x_1} & \cdots & \frac{\partial f_1}{\partial x_n}\\
+    \vdots & \ddots & \vdots\\
+    \frac{\partial f_n}{\partial x_1} & \cdots & \frac{\partial f_n}{\partial x_n}
+\end{bmatrix}.\]
+\subsection{Question 5}
+The function $f:\mathbb{R}\rightarrow\mathbb{R}$ given by \[f(x)=\left\{\begin{array}{ll}
+    \exp(-\frac{1}{1-x^2}) & \text{if } x\in (-1,1) \\
+    0 & \text{otherwise}
+\end{array}\right.\] is smooth and compactly supported.
+\subsection{Question 6}
+Let $v=\begin{pmatrix}x\\y\end{pmatrix}$ be the least squares solution to the equation.Then we have:\begin{align*}
+    & A^TAv = A^Tb\\
+    &\implies\begin{pmatrix}1&-1&2\\1&1&1\end{pmatrix}\begin{pmatrix}1&1\\-1&1\\2&1\end{pmatrix}\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}1&-1&2\\1&1&1\end{pmatrix}\begin{pmatrix}1\\2\\3\end{pmatrix}\\
+    &\implies\begin{pmatrix}x\\y\end{pmatrix}=\begin{pmatrix}3/14\\13/7\end{pmatrix}
+\end{align*}
+\end{document}

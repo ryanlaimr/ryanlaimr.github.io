@@ -1,7 +1,5 @@
 # Course Reviews
 
-[[back]][back]
-
 ## AY2023/2024 Semester 1
 
 Courses Taken:
@@ -40,9 +38,7 @@ Course Taken:
 5. Introduction to Python Programming (22fall)
 6. Macroeconomics (23spring)
 
-These materials can be accessed [[here]][sustech].
-
-[[back]][back]
+These materials can be accessed [here][sustech].
 
 [back]: https://ryanlaimr.github.io
 
